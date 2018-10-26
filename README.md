@@ -1,2 +1,2 @@
 # vim-winccoa
-Simple Syntax Highlightingfor WinCC-OAs Control Scripts and Panels
+Simple Syntax Highlighting for WinCC-OAs Control Scripts and Panels
