@@ -11,11 +11,11 @@ function SwapQuotes(...)
         let l:save = winsaveview()
         let l:temppattern = "$@%&€;"
         " 1. Replace all escaped quotes with temporary pattern
-        %s/\\"/l:temppattern/g
+        %s/\\"/l:temppattern/ge
         " 2. Replace all normal quotes with escaped quotes
-        %s/"/\\"/g
+        %s/"/\\"/ge
         " 3. Replace all temporary patterns with normal quotes
-        %s/l:temppattern/"/g
+        %s/l:temppattern/"/ge
         call winrestview(l:save)
     endif
 endfunction
