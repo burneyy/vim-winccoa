@@ -1,8 +1,8 @@
 runtime! ftplugin/cpp.vim
 
-" Perform automatic conversions? Default: No
+" Perform automatic conversions? Default: Yes
 if !exists("g:winccoa_pnl_auto_swapquotes")
-    let g:winccoa_pnl_auto_swapquotes=0
+    let g:winccoa_pnl_auto_swapquotes=1
 endif
 
 command! SwapQuotes call SwapQuotes()
