@@ -3,7 +3,7 @@ runtime! ftplugin/cpp.vim
 " Function to perform syntax check using WCCOActrl -syntax
 " one optional argument: the project (if not specified takes the -currentproj)
 command! -nargs=? SyntaxCheck call SyntaxCheck(<args>)
-function SyntaxCheck(...)
+function! SyntaxCheck(...)
     let l:proj = "-currentproj"
     if a:0 > 0
         let l:proj = "-proj " . a:1

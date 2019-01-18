@@ -6,7 +6,7 @@ if !exists("g:winccoa_pnl_auto_swapquotes")
 endif
 
 command! SwapQuotes call SwapQuotes()
-function SwapQuotes(...)
+function! SwapQuotes(...)
     if a:0 == 0 || a:1 == "auto" && g:winccoa_pnl_auto_swapquotes == 1
         let l:save = winsaveview()
         %s/\v(\\"|")/\={'\"':'"','"':'\"'}[submatch(0)]/ge
