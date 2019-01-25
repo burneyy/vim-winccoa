@@ -46,6 +46,9 @@ def copy_file_from_subprojects(file_name):
     for subDir in subDirs[::-1]:  #subDirs are listed from least to highest priority
         new_file_name = os.path.join(subDir, rel_file_name)
         if os.path.isfile(new_file_name):
+            destDir = os.path.dirname(file_name)
+            if destDir != "":
+                os.makedirs(os.path.dirname(file_name), exist_ok=True)  #Create dir if needed
             shutil.copy2(new_file_name, file_name)
             print("Copied '{}' to '{}'!".format(new_file_name, file_name))
             return True
