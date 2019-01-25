@@ -5,6 +5,10 @@ Simple Syntax Highlighting and additional Features to view and edit WinCC-OA Con
 Using `vim-plug`, simply can be installed by inserting `Plug 'burneyy/vim-winccoa'` into the vimrc.
 
 # Features
+Python script `vimcc.py` as wrapper around `vim` that allows to copy provided files from the subprojects if available there to the project when the file itself is not present in the project itself. The subprojects are taken from the main projects `<proj_dir>/config/config` file and the hierarchy is respected. Note: the editor can easily be changed within `vimcc.py` to any editor of your choice!
+
+
+## Within vim
 1. Syntax highlighting for `.ctl`, `.pnl` and `.pnl.bak` files (C-like syntax)
 2. For CTRL scripts , the command `SyntaxCheck [<projName>]`is provided to perform a syntax check using the underlying shell command `WCCOActrl -syntax -proj <projName> -log +stderr <thisFile>.ctl` (see [here](https://readthedocs.web.cern.ch/display/ICKB/WinCC+OA+3.15+-+CTRL+Language#WinCCOA3.15-CTRLLanguage-WinCCOAHelpReference)). If no project name is provided, it takes the `-currentproj` as default.
 3. For `.pnl` and `.pnl.bak` files, the command `SwapQuotes` is provided which allows to swap escaped quotes (`\"`) with normal quotes (`"`) and vice versa. The motivation for this is that these files are filled with lots of meta-information that are containing normal quotes - in contrast to the actual code that is containing escaped quotes. The command swaps the different types of quotes so that the normal quotes are used within the actual code.
