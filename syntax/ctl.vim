@@ -33,4 +33,10 @@ syn keyword ctlType dyn_dyn_string dyn_dyn_time dyn_dyn_unsigned dyn_dyn_shape
 
 hi def link ctlType Type
 
+" WinCC OA library
+" Miscellaneous functions                                                                                                              
+syn keyword ctlFunc Debug DebugN DebugFN DebugFTN DebugTN getStackTrace 
+hi def link ctlFunc Function
+
+
 let b:current_syntax = "ctl"
