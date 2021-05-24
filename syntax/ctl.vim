@@ -32,11 +32,30 @@ syn keyword ctlType dyn_dyn_langString dyn_dyn_mixed dyn_dyn_mapping dyn_va_list
 syn keyword ctlType dyn_dyn_string dyn_dyn_time dyn_dyn_unsigned dyn_dyn_shape
 
 hi def link ctlType Type
-
 " WinCC OA library
-" Miscellaneous functions                                                                                                              
+
+" ***************** CONTROL FUNCTIONS *********************
+
+" Dynamic arrays functions
+syn keyword ctlFunc dynAppend dynAvg dynAvgWT dynClear dynContains dynCount dynDynTurn dynInsertAt
+syn keyword ctlFunc dynIntersect dynMax dynLen dynMin dynRemove dynPatternMatch dynSort dynSum dynSortsAsc
+syn keyword ctlFunc dynUnique makeDynAnytype makeDynATime makeDynBit32 makeDynBit64 makeDynBool makeDynChar
+syn keyword ctlFunc makeDynFloat makeDynInt makeDynString makeDynTime makeDynULong makeDynUInt
+
+" Miscellaneous functions
 syn keyword ctlFunc Debug DebugN DebugFN DebugFTN DebugTN getStackTrace 
+
+" Time functions
+syn keyword ctlFunc day daylightsaving daySecond formatTime formatTimeUTC getCurrentTime hour makeATime
+syn keyword ctlFunc makeTime milliSecond minute month period quarter scanTimeUTC second setPeriod setTime
+syn keyword ctlFunc timedFunc timeFromGMT weekDay year yearDay
+
+"Datapoint functions
+syn keyword ctlFunc dpExists dpGet dpGetAlias dpGetAllAliases dpGetAllAttributes dpGetAllComments dpGetAllConfigs
 hi def link ctlFunc Function
 
+" Miscellaneous functions
+syn keyword ctlFunc Debug DebugN DebugFN DebugFTN DebugTN getStackTrace
+hi def link ctlFunc Function
 
-let b:current_syntax = "ctl"
+let b:current_syntax = "ctl" 
