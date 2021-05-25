@@ -2,7 +2,7 @@
 " Language:	CONTROL (WinCC-OA)
 " Current Maintainer:	burneyy (https://github.com/burneyy/vim-winccoa)
 " Previous Maintainer:	-
-" Last Change:	2018 Dec 13
+" Last Change:	2021 May 25
 
 " quit when a syntax file was already loaded
 if exists("b:current_syntax")
@@ -32,6 +32,7 @@ syn keyword ctlType dyn_dyn_langString dyn_dyn_mixed dyn_dyn_mapping dyn_va_list
 syn keyword ctlType dyn_dyn_string dyn_dyn_time dyn_dyn_unsigned dyn_dyn_shape
 
 hi def link ctlType Type
+
 " WinCC OA library
 
 " ***************** CONTROL FUNCTIONS *********************
@@ -42,9 +43,6 @@ syn keyword ctlFunc dynIntersect dynMax dynLen dynMin dynRemove dynPatternMatch 
 syn keyword ctlFunc dynUnique makeDynAnytype makeDynATime makeDynBit32 makeDynBit64 makeDynBool makeDynChar
 syn keyword ctlFunc makeDynFloat makeDynInt makeDynString makeDynTime makeDynULong makeDynUInt
 
-" Miscellaneous functions
-syn keyword ctlFunc Debug DebugN DebugFN DebugFTN DebugTN getStackTrace 
-
 " Time functions
 syn keyword ctlFunc day daylightsaving daySecond formatTime formatTimeUTC getCurrentTime hour makeATime
 syn keyword ctlFunc makeTime milliSecond minute month period quarter scanTimeUTC second setPeriod setTime
@@ -52,10 +50,10 @@ syn keyword ctlFunc timedFunc timeFromGMT weekDay year yearDay
 
 "Datapoint functions
 syn keyword ctlFunc dpExists dpGet dpGetAlias dpGetAllAliases dpGetAllAttributes dpGetAllComments dpGetAllConfigs
-hi def link ctlFunc Function
 
 " Miscellaneous functions
 syn keyword ctlFunc Debug DebugN DebugFN DebugFTN DebugTN getStackTrace
+
 hi def link ctlFunc Function
 
-let b:current_syntax = "ctl" 
+let b:current_syntax = "ctl"
