@@ -2,7 +2,7 @@
 " Language:	CONTROL (WinCC-OA)
 " Current Maintainer:	burneyy (https://github.com/burneyy/vim-winccoa)
 " Previous Maintainer:	-
-" Last Change:	2021 May 25
+" Last Change:	2021 Aug 20
 
 " quit when a syntax file was already loaded
 if exists("b:current_syntax")
@@ -39,9 +39,12 @@ hi def link ctlType Type
 
 " Dynamic arrays functions
 syn keyword ctlFunc dynAppend dynAvg dynAvgWT dynClear dynContains dynCount dynDynTurn dynInsertAt
-syn keyword ctlFunc dynIntersect dynMax dynLen dynMin dynRemove dynPatternMatch dynSort dynSum dynSortsAsc
+syn keyword ctlFunc dynIntersect dynMax dynlen dynMin dynRemove dynPatternMatch dynSort dynSum dynSortsAsc
 syn keyword ctlFunc dynUnique makeDynAnytype makeDynATime makeDynBit32 makeDynBit64 makeDynBool makeDynChar
 syn keyword ctlFunc makeDynFloat makeDynInt makeDynString makeDynTime makeDynULong makeDynUInt
+
+" Mapping functions
+syn keyword ctlFunc mappingClear mappingGetKey mappingGetValue mappingHasKey mappingKeys mappinglen mappingRemove
 
 " Time functions
 syn keyword ctlFunc day daylightsaving daySecond formatTime formatTimeUTC getCurrentTime hour makeATime
