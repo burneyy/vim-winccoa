@@ -41,10 +41,16 @@ hi def link ctlType Type
 syn keyword ctlFunc dynAppend dynAvg dynAvgWT dynClear dynContains dynCount dynDynTurn dynInsertAt
 syn keyword ctlFunc dynIntersect dynMax dynlen dynMin dynRemove dynPatternMatch dynSort dynSum dynSortsAsc
 syn keyword ctlFunc dynUnique makeDynAnytype makeDynATime makeDynBit32 makeDynBit64 makeDynBool makeDynChar
-syn keyword ctlFunc makeDynFloat makeDynInt makeDynString makeDynTime makeDynULong makeDynUInt
+syn keyword ctlFunc makeDynFloat makeDynInt makeDynString makeDynTime makeDynULong makeDynUInt makeDynMapping
 
 " Mapping functions
-syn keyword ctlFunc mappingClear mappingGetKey mappingGetValue mappingHasKey mappingKeys mappinglen mappingRemove
+syn keyword ctlFunc makeMapping mappingClear mappingGetKey mappingGetValue mappingHasKey mappingKeys mappinglen mappingRemove
+
+" String functions
+syn keyWord ctlFunc strchange strexpand strformat stringEditor strjoin strlen strltrim strpos strreplace strrtrim
+syn keyWord ctlFunc strsplit strok strtolower strtoupper strwalk substr
+syn keyWord ctlFunc uniStrChange uniStrExpand uniStrFormat uniStrLen uniStrPos uniStrReplace uniStrTok
+syn keyWord ctlFunc uniStrToLower uniStrToUpper uniSubStr
 
 " Time functions
 syn keyword ctlFunc day daylightsaving daySecond formatTime formatTimeUTC getCurrentTime hour makeATime
