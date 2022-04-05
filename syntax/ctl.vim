@@ -47,10 +47,10 @@ syn keyword ctlFunc makeDynFloat makeDynInt makeDynString makeDynTime makeDynULo
 syn keyword ctlFunc makeMapping mappingClear mappingGetKey mappingGetValue mappingHasKey mappingKeys mappinglen mappingRemove
 
 " String functions
-syn keyWord ctlFunc strchange strexpand strformat stringEditor strjoin strlen strltrim strpos strreplace strrtrim
-syn keyWord ctlFunc strsplit strok strtolower strtoupper strwalk substr
-syn keyWord ctlFunc uniStrChange uniStrExpand uniStrFormat uniStrLen uniStrPos uniStrReplace uniStrTok
-syn keyWord ctlFunc uniStrToLower uniStrToUpper uniSubStr
+syn keyword ctlFunc strchange strexpand strformat stringEditor strjoin strlen strltrim strpos strreplace strrtrim
+syn keyword ctlFunc strsplit strok strtolower strtoupper strwalk substr
+syn keyword ctlFunc uniStrChange uniStrExpand uniStrFormat uniStrLen uniStrPos uniStrReplace uniStrTok
+syn keyword ctlFunc uniStrToLower uniStrToUpper uniSubStr
 
 " Time functions
 syn keyword ctlFunc day daylightsaving daySecond formatTime formatTimeUTC getCurrentTime hour makeATime
